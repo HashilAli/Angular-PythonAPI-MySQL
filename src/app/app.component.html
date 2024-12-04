@@ -1,0 +1,16 @@
+<div style="margin: 100px;">
+  <h2 style="background-color: brown;text-align: center; color: white;">Todo App</h2>
+
+
+  <input type="text" [(ngModel)]="newTask" style="margin: 20px;"> <button (click)="add_task()">add task</button>
+
+
+
+    @for (item of task; track $index) {
+ 
+        <p>{{item.task}}</p>
+
+        <button (click)="delete_task(item.id)">Delete</button>
+
+    }
+</div>
